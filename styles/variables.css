@@ -1,4 +1,11 @@
-/*
-  Переменные для вашего проекта
-  и их переопределение под различные устройства
-*/
+:root {
+  --bg-color: #000028;
+  --page-title-color: #DB00FF;
+  --page-title-shadow-color: #FF0070;
+  --section-title-color: #FF0070;
+  --card-title-color: #000028;
+  --card-title-bg-color: #FF0070;
+  --card-text-color: #F1B2CE;
+
+  --button-color: #FF0070;
+}

@@ -1,5 +1,52 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
+body {
+  background-color: var(--bg-color);
+  color: var(--card-text-color);
+
+  font-family: "IBM Plex Mono", sans-serif;
+  font-weight: 400;
+  font-size: 1.125rem;
+}
+
+.header__title,
+.section__title,
+.card__title,
+.gallery__title {
+  font-weight: 700;
+  font-size: 1em;
+}
+
+.header__theme-menu-button {
+  background-color: var(--bg-color);
+  color: var(--button-color);
+  border: none;
+  inline-size: 70px;
+  block-size: 26px;
+}
+
+.header__theme-menu-button_active {
+  border: 1px solid currentColor;
+}
+
+.section__title {
+  color: var(--section-title-color);
+}
+
+.card__title,
+.gallery__title {
+  color: var(--card-title-color);
+  background-color: var(--card-title-bg-color);
+}
+
+.card__subtitle {
+  font-weight: lighter;
+}
+
+.gallery__item-image {
+  width: 100%;
+}
+
 .page {
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
 }
