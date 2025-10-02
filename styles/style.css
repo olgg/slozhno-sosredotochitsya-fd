@@ -107,6 +107,7 @@ body {
 
 .header__theme-menu-button_active {
   border: 1px solid currentColor;
+  pointer-events: none;
 }
 
 .section__title {
@@ -153,7 +154,7 @@ body {
 }
 
 .gallery {
-  margin-block-end: 30px;
+  margin-block-end: 40px;
 }
 
 .gallery__title {
@@ -163,7 +164,7 @@ body {
 .gallery__list {
   display: grid;
   grid-template-rows: 1fr;
-  gap: 5px;
+  gap: 10px;
 }
 
 .gallery__item-image {
@@ -204,6 +205,11 @@ body {
 
   .header {
     gap: 70px;
+  }
+
+  .header__title,
+  .footer__title {
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
 
   .header__title {
@@ -273,5 +279,31 @@ body {
 
   .gallery {
     margin-block-end: 60px;
+  }
+}
+
+@media (width >= 1024px) {
+  :root {
+      --side-margin: 20px;
+      --header-min-height: 768px;
+  }
+
+  .header__theme-menu {
+    align-self: self-start;
+    margin-block-start: var(--side-margin);
+  }
+
+  .header__theme-menu-list {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .header__text {
+    align-self: self-start;
+    margin-bottom: 30px;
+  }
+
+  .section-wide .cards__list {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
