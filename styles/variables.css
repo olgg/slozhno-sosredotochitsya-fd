@@ -12,4 +12,7 @@
   --rec-icon-display: flex;
 
   --background-image: url('/images/cover-image-dark.png');
+
+  --side-margin: 10px;
+  --header-min-height: 668px;
 }
