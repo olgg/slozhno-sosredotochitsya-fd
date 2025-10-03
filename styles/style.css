@@ -1,14 +1,14 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 body {
-  background-color: var(--bg-color);
+  padding-inline: var(--side-margin);
   color: var(--card-text-color);
 
   font-family: "IBM Plex Mono", sans-serif;
   font-weight: 400;
   font-size: 1.125rem;
-  padding-inline: var(--side-margin);
   line-height: 23.4px;
+  background-color: var(--bg-color);
 }
 
 a {
@@ -16,33 +16,33 @@ a {
 }
 
 .header {
-  min-height: var(--header-min-height);
-  height: 100vh;
   position: relative;
   display: grid;
   grid-template-rows: repeat(3, 1fr);
   gap: 60px;
+  height: 100vh;
+  min-height: var(--header-min-height);
 }
 
 .decorated-zone::before,
 .decorated-zone::after {
   content: '';
-  display: block;
   position: absolute;
+  display: block;
   block-size: 25px;
   inline-size: 25px;
 }
 
 .decorated-zone::before {
-  left: 0;
   bottom: var(--side-margin);
+  left: 0;
   border-bottom: 1px solid var(--button-color);
   border-left: 1px solid var(--button-color);
 }
 
 .decorated-zone::after {
-  right: 0;
   top: var(--side-margin);
+  right: 0;
   border-top: 1px solid var(--button-color);
   border-right: 1px solid var(--button-color);
 }
@@ -51,29 +51,29 @@ a {
   position: absolute;
   top: 12px;
   right: 10px;
-  text-transform: uppercase;
-  gap: 9px;
-  color: var(--button-color);
   display: var(--rec-icon-display); 
   align-items: center;
+  gap: 9px;
+  color: var(--button-color);
+  text-transform: uppercase;
 }
 
 .rec__icon::after {
+  content: '';
+  display: block;
   width: 9px;
   height: 9px;
-  content: '';
-  background-color: var(--button-color);
-  display: block;
   border-radius: 50%;
+  background-color: var(--button-color);
 }
 
 .header__title,
 .footer__title {
+  color: var(--page-title-color);
   font-weight: 700;
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-  color: var(--page-title-color);
-  text-shadow: var(--page-title-shadow-color) 4px 4px;
   line-height: 83%;
+  text-shadow: var(--page-title-shadow-color) 4px 4px;
 }
 
 .header__text {
@@ -101,12 +101,12 @@ a {
 }
 
 .header__theme-menu-button {
-  background-color: var(--bg-color);
-  color: var(--button-color);
   border: none;
+  color: var(--button-color);
+  text-transform: lowercase;
+  background-color: var(--bg-color);
   inline-size: 70px;
   block-size: 26px;
-  text-transform: lowercase;
 }
 
 .header__theme-menu-button:hover {
@@ -182,7 +182,7 @@ a.text-decor:focus {
 }
 
 a.text-decor:focus-visible {
-  outline: currentColor 1px solid
+  outline: currentColor 1px solid;
 }
 
 .gallery {
@@ -207,10 +207,10 @@ a.text-decor:focus-visible {
 }
 
 .footer {
-  min-height: var(--header-min-height);
-  height: 100vh;
-  display: flex;
   position: relative;
+  display: flex;
+  height: 100vh;
+  min-height: var(--header-min-height);
 }
 
 .footer__title {
@@ -218,10 +218,10 @@ a.text-decor:focus-visible {
 }
 
 .page {
-  background-attachment: fixed;
   background-image: var(--background-image);
-  background-size: 100% var(--header-min-height);
   background-repeat: no-repeat;
+  background-size: 100% var(--header-min-height);
+  background-attachment: fixed;
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
 }
 
@@ -268,8 +268,8 @@ a.text-decor:focus-visible {
   }
 
   .section-wide .cards__list {
-    grid-row: 2;
     grid-column: 1 / 3;
+    grid-row: 2;
   }
 
   .gallery {
@@ -295,18 +295,18 @@ a.text-decor:focus-visible {
   }
 
   .ice-cream {
-    grid-row: 1 / 3;
     grid-column: 3;
+    grid-row: 1 / 3;
   }
 
   .tape {
-    grid-row: 2 / 4;
     grid-column: 1;
+    grid-row: 2 / 4;
   }
 
   .street {
-    grid-row: 3;
     grid-column: 2 / 4;
+    grid-row: 3;
   }
 
   .gallery {
