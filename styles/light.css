@@ -15,7 +15,7 @@
   --card-text-color: #353430;
   --button-color: #353430;
   --rec-icon-display: none;
-  --background-image: url('/images/cover-image-light.png');
+  --background-image: url('../images/cover-image-light.png');
 }
 
 @media (prefers-color-scheme: light) {
@@ -29,6 +29,6 @@
     --card-text-color: #353430;
     --button-color: #353430;
     --rec-icon-display: none;
-    --background-image: url('/images/cover-image-light.png');
+    --background-image: url('../images/cover-image-light.png');
   }
 } 

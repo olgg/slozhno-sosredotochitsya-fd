@@ -10,16 +10,16 @@
     <link rel="icon" href="./images/favicon.svg" type="image/svg+xml">  
     <link rel="apple-touch-icon" href="./images/mobile-icon.png">    
     <link rel="stylesheet" href="./fonts/fonts.css">    
-    <link rel="stylesheet" href="./styles/globals.css">
     <link rel="stylesheet" href="./styles/variables.css">
+    <link rel="stylesheet" href="./styles/globals.css">
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/dark.css">
     <link rel="stylesheet" href="./styles/light.css">    
-    <script src="./scripts/script.js"></script>
+    <script src="./scripts/script.js" defer></script>
   </head>
   <body class="page">
     <header class="header decorated-zone">
-      <div class="rec__icon">rec</div>
+      <div class="rec__icon" aria-hidden="true">rec</div>
       <nav class="header__theme-menu">
         <ul class="header__theme-menu-list">
           <li class="header__theme-menu-item">
@@ -47,7 +47,7 @@
         </ul>
       </nav>
       <h1 class="header__title">no focus</h1>
-      <span class="header__text">Что делать, когда не можешь делать ничего<br>Или почему нам так сложно сконцентрироваться, особенно когда очень надо</span>
+      <p class="header__text">Что делать, когда не можешь делать ничего<br>Или почему нам так сложно сконцентрироваться, особенно когда очень надо</p>
     </header>
     <main>
       <section class="section section-narrow">

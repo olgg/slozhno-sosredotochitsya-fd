@@ -17,5 +17,5 @@
 
   --rec-icon-display: flex;
 
-  --background-image: url('/images/cover-image-dark.png');
+  --background-image: url('../images/cover-image-dark.png');
 }

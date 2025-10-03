@@ -11,8 +11,22 @@
 
   --rec-icon-display: flex;
 
-  --background-image: url('/images/cover-image-dark.png');
+  --background-image: url('../images/cover-image-dark.png');
 
   --side-margin: 10px;
   --header-min-height: 668px;
+}
+
+@media (width >= 768px) {
+  :root {
+      --side-margin: 20px;
+      --header-min-height: 1024px;
+  }
+}
+
+@media (width >= 1024px) {
+  :root {
+      --side-margin: 20px;
+      --header-min-height: 768px;
+  }
 }

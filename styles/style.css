@@ -1,16 +1,5 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
-body {
-  padding-inline: var(--side-margin);
-  color: var(--card-text-color);
-
-  font-family: "IBM Plex Mono", sans-serif;
-  font-weight: 400;
-  font-size: 1.125rem;
-  line-height: 23.4px;
-  background-color: var(--bg-color);
-}
-
 a {
   text-decoration: none;
 }
@@ -65,6 +54,7 @@ a {
   height: 9px;
   border-radius: 50%;
   background-color: var(--button-color);
+  box-shadow: 0px 0px 9px 4px var(--button-color);
 }
 
 .header__title,
@@ -107,6 +97,7 @@ a {
   background-color: var(--bg-color);
   inline-size: 70px;
   block-size: 26px;
+  cursor: pointer;
 }
 
 .header__theme-menu-button:hover {
@@ -141,16 +132,13 @@ a {
   display: grid;
   grid-template-columns: 1fr;
   gap: 20px;
+  margin-block-end: 50px;
 }
 
 .cards__list {
   display: grid;
   grid-template-columns: 1fr;
   gap: 20px;
-}
-
-.section {
-  margin-block-end: 50px;
 }
 
 .section:first-child {
@@ -220,16 +208,12 @@ a.text-decor:focus-visible {
 .page {
   background-image: var(--background-image);
   background-repeat: no-repeat;
-  background-size: 100% var(--header-min-height);
+  background-size: cover;
   background-attachment: fixed;
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
 }
 
 @media (width >= 768px) {
-  :root {
-      --side-margin: 20px;
-      --header-min-height: 1024px;
-  }
 
   .rec__icon {
     top: var(--side-margin);
@@ -315,10 +299,6 @@ a.text-decor:focus-visible {
 }
 
 @media (width >= 1024px) {
-  :root {
-      --side-margin: 20px;
-      --header-min-height: 768px;
-  }
 
   .header__theme-menu {
     align-self: self-start;
