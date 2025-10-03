@@ -17,3 +17,18 @@
   --rec-icon-display: none;
   --background-image: url('/images/cover-image-light.png');
 }
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg-color: #FFF1F7;
+    --page-title-color: #FFC2E6;
+    --page-title-shadow-color: #FF8DCB;
+    --section-title-color: #353430;
+    --card-title-color: #353430;
+    --card-title-bg-color: #FF8DCB;
+    --card-text-color: #353430;
+    --button-color: #353430;
+    --rec-icon-display: none;
+    --background-image: url('/images/cover-image-light.png');
+  }
+} 

@@ -11,6 +11,10 @@ body {
   line-height: 23.4px;
 }
 
+a {
+  text-decoration: none;
+}
+
 .header {
   min-height: var(--header-min-height);
   height: 100vh;
@@ -105,6 +109,18 @@ body {
   text-transform: lowercase;
 }
 
+.header__theme-menu-button:hover {
+  border: 1px solid color-mix(in srgb, currentColor 50%, transparent);
+}
+
+.header__theme-menu-button:focus {
+  outline: none;
+}
+
+.header__theme-menu-button:focus-visible {
+  border-bottom: 1px solid currentColor;
+}
+
 .header__theme-menu-button_active {
   border: 1px solid currentColor;
   pointer-events: none;
@@ -151,6 +167,22 @@ body {
 
 .card__subtitle {
   font-weight: lighter;
+}
+
+a.text-decor {
+  text-shadow: var(--page-title-shadow-color) 2px 2px;
+}
+
+a.text-decor:hover {
+  border-bottom: currentColor 1px solid;
+}
+
+a.text-decor:focus {
+  outline: none;
+}
+
+a.text-decor:focus-visible {
+  outline: currentColor 1px solid
 }
 
 .gallery {
@@ -307,3 +339,4 @@ body {
     grid-template-columns: repeat(3, 1fr);
   }
 }
+
