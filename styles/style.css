@@ -157,6 +157,10 @@ a {
   font-weight: lighter;
 }
 
+.card__text:not(:last-child) {
+  padding-block-end: 10px;
+}
+
 a.text-decor {
   text-shadow: var(--page-title-shadow-color) 2px 2px;
 }
