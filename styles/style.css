@@ -80,14 +80,14 @@ a {
 }
 
 .header__theme-menu {
-  align-self: flex-end;
+  padding-block-start: 75px;
 }
 
 .header__theme-menu-list {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  gap: 11px;
+  gap: 9px;
 }
 
 .header__theme-menu-button {
@@ -239,6 +239,14 @@ a.text-decor:focus-visible {
     margin-bottom: 185px;
   }
 
+  .header__theme-menu {
+    padding-block-start: 190px;
+  }
+
+  .header__theme-menu-list {
+    gap: 10px;
+  }
+
   .section {
     margin-block-end: 80px;
   }
@@ -301,6 +309,7 @@ a.text-decor:focus-visible {
 @media (width >= 1024px) {
 
   .header__theme-menu {
+    padding-block-start: 0;
     align-self: self-start;
     margin-block-start: var(--side-margin);
   }
@@ -312,7 +321,11 @@ a.text-decor:focus-visible {
 
   .header__text {
     align-self: self-start;
-    margin-bottom: 30px;
+    margin: 5px 0 30px;
+  }
+
+  .section-narrow {
+    gap: 10px;
   }
 
   .section-wide .cards__list {
