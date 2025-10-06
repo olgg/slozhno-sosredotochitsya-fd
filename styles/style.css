@@ -54,7 +54,7 @@ a {
   height: 9px;
   border-radius: 50%;
   background-color: var(--button-color);
-  box-shadow: 0px 0px 9px 4px var(--button-color);
+  box-shadow: 0px 0px 4px 2px var(--button-color);
 }
 
 .header__title,
@@ -252,15 +252,12 @@ a.text-decor:focus-visible {
   }
 
   .section {
+    grid-template-columns: 1fr 2fr;
     margin-block-end: 80px;
   }
 
   .section:first-child {
     margin-block-start: 60px;
-  }
-
-  .section {
-    grid-template-columns: 1fr 2fr;
   }
 
   .section-wide .cards__list {
